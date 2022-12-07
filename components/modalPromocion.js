@@ -7,37 +7,38 @@ const ModalPromocion = () => {
 
     const [ loading, setLoading ] = useState(true)
 
-    const [modal, setModal] = useState(()=>{
-        if(typeof window !== 'undefined'){
-            let mode = localStorage.getItem('modal')
-            if( mode != 1){
-                return true 
-            }else{
-                return false 
-            }
+    // const [modal, setModal] = useState(()=>{
+    //     if(typeof window !== 'undefined'){
+    //         let mode = localStorage.getItem('modal')
+    //         if( mode != 1){
+    //             return true 
+    //         }else{
+    //             return false 
+    //         }
             
-        }else{
-            setLoading(!loading)
-        }
-    })
-    useEffect (() => { 
+    //     }else{
+    //         setLoading(!loading)
+    //     }
+    // })
+    // useEffect (() => { 
         
-    },[loading])
+    // },[loading])
 
     const showModal = () => {
         setModal(true)
     };
 
-    const handleCancel = () => {
-        setModal(false)
-        localStorage.setItem('modal', 1);
-    };
-    console.log(modal)
+    // const handleCancel = () => {
+    //     setModal(false)
+    //     localStorage.setItem('modal', 1);
+    // };
+    // console.log(modal)
     return (
     <Modal 
-        visible={modal} 
+        // visible={modal} 
+        visible={false}
         footer={null} 
-        onCancel={handleCancel}
+        // onCancel={handleCancel}
     >
         <Row justify="center"> 
                 <Image
@@ -57,7 +58,7 @@ const ModalPromocion = () => {
                     color: '#1176EF'
                 }}
             >
-                10% de dscto. a publico general y 15% de dscto. a alumnos CCITEC
+                10% de dscto. a publico general y 15% de dscto. a alumnos CCITEC22
             </Text>
             </Col>
             <Col>

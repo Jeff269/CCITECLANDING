@@ -31,7 +31,7 @@ const Docentes = () => {
     useEffect (() => {
         axios ({
           method: 'GET',
-          url: 'https://aula-virtual-ccitec.herokuapp.com/teachers'
+          url: 'https://admin.ccitecperu.com/teachers'
         }).then (res =>{
             setTeachers(res.data.reverse())
             setLoading(false)

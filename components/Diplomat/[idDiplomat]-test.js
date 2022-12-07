@@ -23,7 +23,7 @@ const DiplomatItem = () => {
     const fetchData =  async() => {
         const id =  await router.query.idDiplomat
         if( id != undefined ){
-            let url = await `https://aula-virtual-strapi.herokuapp.com/diplomats/${id}`
+            let url = await `http://18.228.178.64:1337/diplomats/${id}`
     
             axios.get(url)
                 .then(res=>{

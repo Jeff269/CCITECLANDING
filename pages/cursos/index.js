@@ -15,7 +15,7 @@ const Cursos = () => {
     useEffect (() => {
         axios ({
           method: 'GET',
-          url: 'https://aula-virtual-ccitec.herokuapp.com/courses?_limit=1000000'
+          url: 'https://admin.ccitecperu.com/courses?_limit=1000000'
         }).then (res =>{
             setCourses(res.data.reverse())
             setLoading(false)

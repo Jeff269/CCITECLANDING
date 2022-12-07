@@ -49,7 +49,7 @@ const CursoItem = () => {
         const id = await router.query.idCourse 
         if(id != undefined){
 
-            let url =  await `https://aula-virtual-ccitec.herokuapp.com/courses/${id}`
+            let url =  await `https://admin.ccitecperu.com/courses/${id}`
     
             axios.get(url)
                 .then(res=>{

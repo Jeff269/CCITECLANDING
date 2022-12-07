@@ -15,7 +15,7 @@ const Diplomados = () => {
     useEffect (() => {
         axios ({
           method: 'GET',
-          url: 'https://aula-virtual-ccitec.herokuapp.com/diplomats?_limit=1000000'
+          url: 'https://admin.ccitecperu.com/diplomats?_limit=1000000'
         }).then (res =>{
           setDiplomats(res.data.reverse())
           setLoading(false)

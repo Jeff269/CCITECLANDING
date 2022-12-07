@@ -14,7 +14,7 @@ const Inversion = ( data ) => {
 
     const fetchData =  async() => {
 
-        await axios.get('https://aula-virtual-strapi.herokuapp.com/investment-courses')
+        await axios.get('https://admin.ccitecperu.com/investment-courses')
             .then(res=>{
                 setInvestment(res.data)
             })

@@ -49,7 +49,7 @@ const DiplomatItem = () => {
         const id = await router.query.idDiplomat 
         if(id != undefined){
 
-            let url =  await `https://aula-virtual-ccitec.herokuapp.com/diplomats/${id}`
+            let url =  await `https://admin.ccitecperu.com/diplomats/${id}`
     
             axios.get(url)
                 .then(res=>{

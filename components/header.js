@@ -10,6 +10,7 @@ const { Header} = Layout
 const { Text, Link } = Typography
 const menu = (
     <Menu>
+    
       <Menu.Item>
         <Link href="/acerca-de-nosotros">
         <a rel="noopener noreferrer" >
@@ -95,11 +96,11 @@ const Head = () => {
                     </Menu.Item>
                     */}
                     <Menu.Item key="7">
-                      <Button style={{color:'white', fontWeight:'bold', fontSize: 16}} target="_blank" type="primary" href="https://aulavirtual.cursosccitec.com/">Campus Virtual</Button>
+                      <Button style={{color:'white', fontWeight:'bold', fontSize: 16}} target="_blank" type="primary" href="http://aulavirtual.ccitecperu.com/">Campus Virtual</Button>
                     </Menu.Item>
                     
                     <Menu.Item key="7">
-                      <Button style={{color:'white', fontWeight:'bold', fontSize: 16}} target="_blank" type="primary" href="http://campusvirtual.cursosccitec.com/">Campus Virtual Gratuito</Button>
+                      <Button style={{color:'white', fontWeight:'bold', fontSize: 16}} target="_blank" type="primary" href="http://certificados.ccitecperu.com/">Valida tu Certificado</Button>
                     </Menu.Item>
                   </Menu>
                 </Header>
